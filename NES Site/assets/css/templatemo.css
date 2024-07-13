@@ -99,7 +99,7 @@ p, a {font-weight: 400;}
 }
 .recent-work .recent-work-vertical {
 	background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(25,135,84,1) 66.666%, rgba(255,255,255,0) 99.999%);
   background-size: 300% 300%;
   background-position: 0% 100%;
   transition: .5s;
@@ -133,12 +133,12 @@ p, a {font-weight: 400;}
   width: 8rem;
 }
 .partner-wap {
-  background-color: #7276ec;
+  background-color: #198754;
   transition: 1s;
   cursor: pointer;
 }
 .partner-wap:hover {
-  background-color: #b1b3f5;
+  background-color: #2abb77;
 }
 .why-us {
   background: rgb(239,239,253);
@@ -187,4 +187,23 @@ p, a {font-weight: 400;}
 footer a.text-light:hover {
   color: #bfbfbf !important;
   transition-duration: 0.15s;
+  
 }
+.icon-wrapper {
+  display: inline-flex;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-color: white;
+  border-radius: 5px; /* Adjust border radius as needed */
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.custom-size {
+  color: #24bc76; /* Instagram brand color */
+  font-size: 37px; /* Adjust icon size as needed */
+  line-height: 1; /* Ensure no extra space within the icon */
+}
+

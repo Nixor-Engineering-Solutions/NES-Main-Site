@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <title>Nixor Engineering Services - About Page</title>
+    <title>Nixor Engineering Services - Work Detail Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
@@ -16,65 +17,92 @@
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
-<!--
-
-
--->
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- Include Babel for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Include Giscus -->
+    <script src="https://unpkg.com/@giscus/react@latest/dist/giscus.umd.production.min.js"></script>
+<!---->
 </head>
 
 <body>
-<!-- Header -->
-<nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a class="navbar-brand h1" href="index.html">
-            <!--i class='bx bx-buildings bx-sm text-dark'></i-->
-            <img src="./assets/img/NES-Logo-Small.png"></img> 
-            <span class="text-dark h4">Nixor Engineering</span> <span class="text-primary h4">Solutions</span>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="index.html">
+                <!--i class='bx bx-buildings bx-sm text-dark'></i-->
+                <img src="./assets/img/NES-Logo-Small.png"></img> 
+                <span class="text-dark h4">Nixor Engineering</span> <span class="text-primary h4">Solutions</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
-            <div class="flex-fill mx-xl-5 mb-2">
-                <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                    <li class="nav-item">
-                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar align-self-center d-flex">
-                <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
-                <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <!-- Close Header -->
 
+    <!--custom style --> 
+<style>
+    .icon-wrapper {
+     display: inline-flex;
+     width: 30px; /* Adjust size as needed */
+     height: 30px; /* Adjust size as needed */
+     background-color: white;
+     border-radius: 5px; /* Adjust border radius as needed */
+     align-items: center;
+     justify-content: center;
+     padding: 0; /* Remove any padding */
+     margin: 0; /* Remove any margin */
+ }
+ 
+ .custom-size {
+     color: #198754; /* Instagram brand color */
+     font-size: 37px; /* Adjust icon size as needed */
+     line-height: 1; /* Ensure no extra space within the icon */
+ }
+ 
+ </style>
+ <!--end custom style-->
 
     <!-- Start Banner Hero -->
     <div id="work_single_banner" class="bg-light w-100">
         <div class="container-fluid text-light d-flex justify-content-center align-items-center border-0 rounded-0 p-0 py-5">
             <div class="banner-content col-lg-8 m-lg-auto text-center py-5 px-3">
-                <h1 class="banner-heading h2 pb-5 typo-space-line-center">Digital Marketing</<h1>
+                <h1 class="banner-heading h2 pb-5 typo-space-line-center">Sanat O ILM</<h1>
                 </h1>
-                <h3 class="h4 pb-2 light-300">We do do that</h3>
+                <h3 class="h4 pb-2 light-300">Spreading Education to those in Need</h3>
                 <p class="banner-footer light-300">
-                    Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
+                    Spreading education to the needy empowers individuals, lifts communities out of poverty, and fosters social mobility. It cultivates critical thinking, enhances opportunities for employment, and enables individuals to contribute meaningfully to society, ultimately creating a more equitable and prosperous world for everyone.
                 </p>
             </div>
         </div>
@@ -86,9 +114,9 @@
 
         <div class="row pt-5">
             <div class="worksingle-content col-lg-8 m-auto text-left justify-content-center">
-                <h2 class="worksingle-heading h3 pb-3 light-300 typo-space-line">Digital Marketing Service</h2>
+                <h2 class="worksingle-heading h3 pb-3 light-300 typo-space-line">Empowering College Students through Innovative Engineering Endeavors</h2>
                 <p class="worksingle-footer py-3 text-muted light-300">
-                    Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
+                    NES, an engineering entity of college students, promotes innovation, practical learning, and collaboration among peers. It offers hands-on experience, fosters creativity, and prepares students for real-world challenges in their field.
                 </p>
             </div>
         </div><!-- End Blog Cover -->
@@ -229,7 +257,7 @@
         <div class="row">
             <div class="col-md-8 m-auto text-left justify-content-center">
                 <p class="pt-5 text-muted light-300">
-                    Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
+                    AS, an engineering entity driven by college students, stands as a beacon of innovation and collaboration. By harnessing the collective creativity and technical prowess of its members, NES not only enriches academic experiences but also cultivates practical skills crucial for future careers. Through hands-on projects and collaborative initiatives, NES prepares students to tackle real-world challenges, fostering a culture of continuous learning and innovation within the academic community.
                 </p>
             </div>
         </div><!-- End Paragrph -->
@@ -239,11 +267,11 @@
             <div class="col-md-8 m-auto text-left justify-content-center">
                 <p class="display-6 py-4 ps-4 border border-5 border-top-0 border-end-0 border-bottom-0 border-start">
                     <i>
-                        Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
+                        Helping Spread literacy
                       </i>
                 </p>
                 <p class="text-muted light-300">
-                    Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
+                    This collaborative platform not only enhances academic learning but also prepares students for the complexities of the professional world. By encouraging teamwork and providing opportunities to apply classroom knowledge to real-world problems, NES equips its members with invaluable experience and fosters a spirit of entrepreneurship and innovation. Through initiatives like workshops, hackathons, and community outreach programs, NES not only enriches the educational journey but also contributes positively to the broader engineering community, shaping the leaders and innovators of tomorrow.
                 </p>
             </div>
         </div><!-- End Qute -->
@@ -260,154 +288,15 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 ml-auto mr-auto pt-3 pb-4">
                 <p class="text-muted light-300">
-                    Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-                </p>
+                    Help us by Sharing your Thoughts
             </div>
         </div>
         <!-- End Work Sigle -->
 
-        <!-- Start Comment -->
-        <div class="row justify-content-center">
-            <div class="worksingle-comment-heading col-8 m-auto pb-3">
-                <h4 class="h5">Comments</h4>
-            </div>
-        </div>
+        <div class="commentbox"></div>
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>commentBox('5744057678561280-proj')</script>
 
-        <div class="row pb-4">
-            <div class="worksingle-comment-body col-md-8 m-auto">
-                <div class="d-flex">
-                    <div>
-                        <img class="rounded-circle" src="./assets/img/team-05.jpg" style="width: 50px;">
-                    </div>
-                    <div class="comment-body">
-                        <div class="comment-header d-flex justify-content-between ms-3">
-                            <div class="header text-start">
-                                <h5 class="h6">Ahmad</h5>
-                                <p class="text-muted light-300">10 mins ago</p>
-                            </div>
-                            <a href="#" class="text-decoration-none text-secondary"><i class='bx bxs-share me-2'></i>Reply</a>
-                        </div>
-                        <div class="footer">
-                            <div class="card-body border ms-3 light-300">
-                                Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Comment -->
-
-
-        <div class="row pb-4">
-            <div class="col-lg-8 m-auto">
-                <div class="d-flex">
-                    <div>
-                        <img class="rounded-circle" src="./assets/img/team-01.jpg" style="width: 50px;">
-                    </div>
-                    <div class="comment-body">
-                        <div class="comment-header d-flex justify-content-between ms-3">
-                            <div class="header text-start">
-                                <h5 class="h6">hassan Abdullah</h5>
-                                <p class="text-muted light-300">5 mins ago</p>
-                            </div>
-                            <a href="#" class="text-decoration-none text-secondary"><i class='bx bxs-share me-2'></i>Reply</a>
-                        </div>
-                        <div class="footer">
-                            <div class="card-body border ms-3 light-300">
-                                Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Comment -->
-
-
-        <div class="row pb-4">
-            <div class="col-lg-8 m-auto">
-                <div class="d-flex ml-4">
-                    <div>
-                        <img class="rounded-circle" src="./assets/img/team-05.jpg" style="width: 50px;">
-                    </div>
-                    <div class="comment-body">
-                        <div class="comment-header d-flex justify-content-between ms-3">
-                            <div class="header text-start">
-                                <h5 class="h6">Ahmad</h5>
-                                <p class="text-muted light-300">15 mins ago</p>
-                            </div>
-                            <a href="#" class="text-decoration-none text-secondary"><i class='bx bxs-share me-2'></i>Reply</a>
-                        </div>
-                        <div class="footer">
-                            <div class="card-body border ms-3 light-300">
-                                Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Comment -->
-
-
-        <div class="row pb-4">
-            <div class="col-lg-8 m-auto">
-                <div class="d-flex ml-5">
-                    <div>
-                        <img class="rounded-circle" src="./assets/img/team-01.jpg" style="width: 50px;">
-                    </div>
-                    <div class="comment-body">
-                        <div class="comment-header d-flex justify-content-between ms-3">
-                            <div class="header text-start">
-                                <h5 class="h6">Hassan</h5>
-                                <p class="text-muted light-300">16 mins ago</p>
-                            </div>
-                            <a href="#" class="text-decoration-none text-secondary"><i class='bx bxs-share me-2'></i>Reply</a>
-                        </div>
-                        <div class="footer">
-                            <div class="card-body border ms-3 light-300">
-                                Digital marketing leverages online platforms to promote brands, engage audiences, and drive sales through targeted, data-driven strategies and creative content.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Comment -->
-
-
-        <div class="row pb-4">
-            <div class="worksingle-comment-footer col-lg-8 m-auto">
-                <h4 class="h5">Leave Comment</h4>
-                <form class="col-md-12 m-auto" method="POST" action="#" role="form">
-
-                    <div class="form-group">
-                        <label class="pb-2 pt-sm-0 pt-4 light-300" for="inputmessage">Your Comment</label>
-                        <textarea class="form-control form-control-lg light-300" id="inputmessage" name="inputmessage" placeholder="Your Comment" rows="5"></textarea>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-lg-6">
-                            <label class="pb-2 light-300" for="inputname">Name</label>
-                            <input type="text" class="form-control form-control-lg light-300" id="inputname" name="inputname" placeholder="Name">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="pb-2 pt-sm-0 pt-4 light-300" for="inputemail">Email</label>
-                            <input type="email" class="form-control form-control-lg light-300" id="inputemail" name="inputemail" placeholder="Email">
-                        </div>
-                    </div>
-
-                    <div class="form-row pt-2">
-                        <div class="col-md-12 col-10 text-end">
-                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div><!-- End Comment Form -->
 
 
     </section>
@@ -426,15 +315,15 @@
                             <a href="#" class="related-content card text-decoration-none overflow-hidden h-100">
                                 <img class="related-img card-img-top" src="./assets/img/related-post-01.jpg" alt="Card image cap">
                                 <div class="related-body card-body p-4">
-                                    <h5 class="card-title h6 m-0 semi-bold-600 text-dark">Digital Marketing</h5>
+                                    <h5 class="card-title h6 m-0 semi-bold-600 text-dark">Canteen Screens</h5>
                                     <p class="card-text pt-2 mb-1 light-300 text-dark">
-                                        We do indeed do that
+                                        KDS system to help you with your orders
                                     </p>
                                     <div class="d-flex justify-content-between">
                                         <span class="text-primary light-300">Read more</span>
                                         <div class="light-300">
-                                            <i class='bx-fw bx bx-heart me-1'></i>5
-                                            <i class='bx-fw bx bx-chat    ms-1 me-1'></i>3
+                                            <i class='bx-fw bx bx-heart me-1'></i>500
+                                            <i class='bx-fw bx bx-chat    ms-1 me-1'></i>30
                                         </div>
                                     </div>
                                 </div>
@@ -444,15 +333,15 @@
                             <a href="#" class="related-content card text-decoration-none overflow-hidden h-100">
                                 <img class="related-img card-img-top" src="./assets/img/related-post-02.jpg" alt="Card image cap">
                                 <div class="related-body card-body p-4">
-                                    <h5 class="card-title h6 m-0 semi-bold-600 text-dark">App Development</h5>
+                                    <h5 class="card-title h6 m-0 semi-bold-600 text-dark">NES x Upcode</h5>
                                     <p class="card-text pt-2 mb-1 light-300 text-dark">
-                                        Guess who has to do that
+                                        Empowering the Newcomers with coding practices
                                     </p>
                                     <div class="d-flex justify-content-between">
                                         <span class="text-primary light-300">Read more</span>
                                         <div class="light-300">
-                                            <i class='bx-fw bx bx-heart me-1'></i>11
-                                            <i class='bx-fw bx bx-chat    ms-1 me-1'></i>9
+                                            <i class='bx-fw bx bx-heart me-1'></i>110
+                                            <i class='bx-fw bx bx-chat    ms-1 me-1'></i>90
                                         </div>
                                     </div>
                                 </div>
@@ -462,15 +351,15 @@
                             <a href="#" class="related-content card text-decoration-none overflow-hidden h-100">
                                 <img class="related-img card-img-top" src="./assets/img/related-post-03.jpg" alt="Card image cap">
                                 <div class="related-body card-body p-4">
-                                    <h5 class="card-title h6 m-0 semi-bold-600 text-dark">Digital Marketing</h5>
+                                    <h5 class="card-title h6 m-0 semi-bold-600 text-dark">Solar Charging Stations</h5>
                                     <p class="card-text pt-2 mb-1 light-300 text-dark">
-                                        Guess who has to do that
+                                        Helping you relax and charge your batteries
                                     </p>
                                     <div class="d-flex justify-content-between">
                                         <span class="text-primary light-300">Read more</span>
                                         <div class="light-300">
-                                            <i class='bx-fw bx bx-heart me-1'></i>31
-                                            <i class='bx-fw bx bx-chat    ms-1 me-1'></i>2
+                                            <i class='bx-fw bx bx-heart me-1'></i>310
+                                            <i class='bx-fw bx bx-chat    ms-1 me-1'></i>200
                                         </div>
                                     </div>
                                 </div>

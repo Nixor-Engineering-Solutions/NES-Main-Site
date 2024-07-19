@@ -1,8 +1,19 @@
-/*
-Custom CSS for TemplateMo 561 Purple Buzz
 
+.icon-wrapper {
+    display: inline-flex;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background-color: white;
+    border-radius: 5px; /* Adjust border radius as needed */
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+}
 
-
-*/
-
+.custom-size {
+    color:#198754 !important; /* Instagram brand color */
+    font-size: 37px; /* Adjust icon size as needed */
+    line-height: 1; /* Ensure no extra space within the icon */
+}
 

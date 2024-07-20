@@ -155,7 +155,16 @@ p, a {font-weight: 400;}
 }
 
 /* Work */
-/* Singel Work */
+/* Oasis of Fun */
+#Oasis_Of_Fun {
+  background-image: url('./../img/Oasisoffunbanner.png');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Work-single */
 #work_single_banner {
   background-image: url('./../img/banner-bg-02.jpg');
   background-position: center center;
@@ -163,6 +172,15 @@ p, a {font-weight: 400;}
   height: 100%;
   width: 100%;
 }
+
+#Sanat_O_Ilm {
+  background-image: url('./../img/SANAT\ O\ ILM\ BANNER.png');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .related-content {
   border-radius: 20px;
   cursor: pointer;
